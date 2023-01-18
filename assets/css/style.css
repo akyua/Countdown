@@ -1,0 +1,100 @@
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+      --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+    --poppins: 'poppins';
+  }
+
+.header-image{
+    display: flex;
+    width: auto; 
+    height: auto;
+    margin: 0 auto;
+}
+
+main{
+    margin-bottom: 20px;
+    font-family: var(--poppins);
+}
+
+.main-container{
+    margin: 69px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.main-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.main-title{
+    color: var(--purple);
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .3rem;
+}
+
+.main-timer{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.main-timer-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.main-timer-text{
+    display: flex;
+    font-size: 20px;
+    color: var(--light-grey);
+    font-weight: 200;
+    
+}
+
+.main-timer-number{
+    color: var(--black);
+    font-size: 80px;
+}
+
+.signup{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 200px;
+    text-align: center;
+}
+
+
+#button{
+    color: #FFFFFF;
+    background-color: var(--purple);
+    border: 3px solid var(--purple);
+    border-radius: 10px;
+    width: 250px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.main-image{
+    width: 607px;
+    height: 435px;
+}
+
+
+.footer-image{
+    display: flex;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+}
