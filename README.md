@@ -1,4 +1,4 @@
-<h1 align="center"> Social Tree </h1>
+<h1 align="center"> Countdown </h1>
 
 <p align="center"> This is a project done in the challenge promoted of Rocketseat.  </p>
 
