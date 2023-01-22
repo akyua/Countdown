@@ -1,28 +1,21 @@
-function timer(duration){
-    let timer = duration, hours, minutes, seconds;
-
-    setInterval(function(){
-        seconds = parseInt(timer % 60);
-        minutes = parseInt((timer / 60) % 10);
-        hours = parseInt((timer / 3600) % 24);
-        days = parseInt((timer / 3600) / 24);
-        seconds = seconds < 10 ? '0' + seconds : seconds;
-        minutes = minutes < 10 ? '0' + minutes : minutes;
-        hours = hours < 10 ? '0' + hours : hours;
-        if(--timer < 0){
-            timer = 00;
-        }
-        const secondsDisplay = document.querySelector('#seconds')
-        const minutesDisplay = document.querySelector('#minutes')
-        const hoursDisplay = document.querySelector('#hours')
-        const daysDisplay = document.querySelector('#days')
-        secondsDisplay.textContent = seconds;
-        minutesDisplay.textContent = minutes;
-        hoursDisplay.textContent = hours;
-        daysDisplay.textContent = days;
-
-    },1000);
-}
-
-
-timer(120000)
+var deadline = new Date("dec 31, 2023 23:59:59").getTime();
+  
+var x = setInterval(function() {
+  
+var now = new Date().getTime();
+var t = deadline - now;
+var days = Math.floor(t / (1000 * 60 * 60 * 24));
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((t % (1000 * 60)) / 1000);
+document.getElementById("days").innerHTML =days ;
+document.getElementById("hours").innerHTML =hours;
+document.getElementById("minutes").innerHTML = minutes; 
+document.getElementById("seconds").innerHTML =seconds; 
+if (t < 0) {
+        clearInterval(x);
+        document.getElementById("days").innerHTML ='0';
+        document.getElementById("hours").innerHTML ='0';
+        document.getElementById("minutes").innerHTML ='0' ; 
+        document.getElementById("seconds").innerHTML = '0'; }
+}, 1000);
