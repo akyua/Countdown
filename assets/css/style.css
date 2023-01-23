@@ -6,6 +6,52 @@
     --poppins: 'poppins';
   }
 
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.toggle-input{
+    display: none;
+}
+
+.pointer  {
+    cursor: pointer;
+}
+
+.slider{
+    width:60px;
+    height:30px;
+    background-color: var(--text-color);
+    border-radius: 20px;
+    border:2px solid var(--black);
+    pointer-events: none;
+    position: relative;
+}
+
+.button-switch{
+    background-color: #FFFFFF ;
+    border-radius: 50%;
+    border: none;
+    width: 25px;
+    height: 25px;
+    top: 2px;
+    left: 3px;
+    position:absolute;
+    transition: .4s ease-in-out;
+}
+
+.toggle-input:checked ~ .slider{
+    background-color: var(--black);
+}
+
+.toggle-input:checked ~ .slider > .button-switch{
+    background-color: var(--text-color);
+    left: 33px;
+}
+
 .header-image{
     display: flex;
     width: auto; 
