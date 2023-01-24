@@ -18,9 +18,9 @@
 
 <br>
 
-<h2 align="center"> See web site on live </h2>
+<h2 align="center"> See website on live </h2>
 
-<p align="center">  </p>
+<p align="center"> https://akyua.github.io/Countdown/  </p>
 
 <br>
 
@@ -28,6 +28,7 @@
 
 <div align="center">
 
+![countdown](https://user-images.githubusercontent.com/75745796/214376431-badb42c7-db52-4b37-af1e-9be53fa700f2.png)
 
 </div>
 
